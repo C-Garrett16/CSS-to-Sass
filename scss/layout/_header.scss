@@ -1,0 +1,160 @@
+/*------ Header ------*/
+
+.container {
+  text-align: center;
+  background-color: $color-sec;
+}
+
+.main-header {
+  @extend %clear;
+  margin: 0 auto;
+
+  h1 {
+    @extend %clear;
+    float: left;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  img {
+    @include area($width: 50%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .list-icon {
+    @include area(32px, 32px);
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .main-nav {
+    @extend %clear;
+    display: none;
+    margin: 0 auto;
+    padding: 0;
+    @include brk(narrow) {
+      display: inline;
+      margin: 10px;
+    }
+  }
+}
+
+.primary {
+  @include brk(narrow) {
+    @include area($width: 50%);
+    float: right;
+    padding: 30px 20px;
+  }
+}
+
+.secondary {
+  @extend %clear;
+
+  @include brk(narrow) {
+    @include area($width: 45%);
+    font-size: 1.2em;
+    padding-bottom: 0;
+    padding-left: 5%;
+  }
+
+  @include brk(wide) {
+    @include area(50%, 50%);
+    padding-top: 5%;
+    font-size: 1.7em;
+    text-align: left;
+  }
+
+  span {
+    padding: 20px 10px;
+    font-size: 1.10em;
+  }
+}
+
+/*------ Navigation ------*/
+.main-nav {
+  a,
+  li {
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+    background-color: $color-prim;
+    font-size: 1.20em;
+  }
+
+  @include brk(narrow) {
+    clear: both;
+    a {
+      background-color: $color-prim;
+    }
+
+    li {
+      display: inline;
+      background-color: $color-sec;
+    }
+
+    ul {
+      border: none;
+      padding: 40px;
+    }
+  }
+
+  @include brk(wide) {
+    position: fixed;
+    top: 30px;
+    right: 0;
+
+    ul {
+      background: none;
+      float: right;
+    }
+
+    li {
+      display: inline;
+      padding: 0;
+      margin: 0 50px;
+    }
+  }
+}
+
+.top-nav {
+  @extend %clear;
+  clear: both;
+  border-bottom: lightgrey 3px solid;
+  margin-bottom: 20px;
+
+  h1 {
+    border-bottom: none;
+    padding-left: 10px;
+  }
+
+  @include brk(narrow) {
+    h1 {
+      float: none;
+      padding-bottom: 10px;
+    }
+
+    .list-icon {
+      display: none;
+    }
+  }
+
+  @include brk(wide) {
+    @include area($width: 100%, $height: 120px);
+    background: $color-sec;
+    position: fixed;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    top: 0;
+    vertical-align: top;
+
+    h1 {
+      float: left;
+      border: none;
+      padding-left: 50px;
+    }
+  }
+}

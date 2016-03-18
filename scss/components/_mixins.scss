@@ -1,0 +1,22 @@
+// === Mixins === //
+
+// Height/Width
+
+@mixin area($height : null, $width : null) {
+  width: $width;
+  height: $height;
+}
+
+// Media Queiries
+
+@mixin brk($brk-pt) {
+  $brk-narrow : "(min-width: 769px)";
+  $brk-wide   : "(min-width: 1100px)";
+
+  @if $brk-pt == narrow {
+    @media #{$brk-narrow} { @content; }
+  }
+  @else if $brk-pt == wide {
+    @media #{$brk-wide} { @content; }
+  }
+}

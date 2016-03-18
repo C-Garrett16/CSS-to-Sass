@@ -1,0 +1,90 @@
+/*------ Footer ------*/
+
+.main-footer {
+  @extend %clear;
+  margin: 0 auto;
+  padding: 0;
+
+  h1 {
+    padding: 30px 0;
+  }
+
+  ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    li {
+      padding: 7px 0;
+    }
+  }
+
+  p,
+  .contact-div {
+    @include brk(narrow) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.twitter {
+  border-bottom: 3px solid lightgrey;
+  padding-bottom: 10px;
+
+  @include brk(narrow) {
+    border: none;
+  }
+}
+
+.name-bottom {
+  @include area($width: 45%);
+  float: left;
+  font-weight: bold;
+
+  @include brk(narrow) {
+    max-width: 30%;
+  }
+
+  @include brk(wide) {
+    max-width: 15%;
+    p {
+      margin: 0;
+      padding: 0 10px;
+    }
+  }
+}
+
+.to-top {
+  @include area($width: 45%);
+  float: right;
+  font-weight: bold;
+
+  @include brk(narrow) {
+    display: none;
+  }
+}
+
+.links-bottom {
+  display: none;
+
+  ul {
+    @extend %clear;
+  }
+
+  @include brk(narrow) {
+    float: right;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      margin-right: 20px;
+      font-size: 1.2em;
+    }
+  }
+
+  @include brk(wide) {
+    font-size: 1.2em;
+  }
+}

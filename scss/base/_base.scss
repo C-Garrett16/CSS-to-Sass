@@ -1,0 +1,48 @@
+/*------ Base Page Layout ------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $stack-titillium-web;
+  @include brk(wide) {
+    padding-top: 108px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  border-bottom: lightgrey 3px solid;
+}
+
+h1,
+h2 {
+  font-family: $stack-titillium-web;
+  font-weight: bold;
+}
+
+span,
+p {
+  max-width: 90%;
+  margin: 20px auto;
+  font-family: $stack-titillium-web;
+  color: #424242;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+
+  &:visited {
+    color: darkgrey;
+  }
+
+  &:hover {
+    color: lightgreen;
+    transition: .5s;
+  }
+}
