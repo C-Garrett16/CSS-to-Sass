@@ -16,7 +16,7 @@ img {
 }
 
 h1 {
-  border-bottom: lightgrey 3px solid;
+  border-bottom: darken($color-sec, 20%) 3px solid;
 }
 
 h1,
@@ -30,19 +30,19 @@ p {
   max-width: 90%;
   margin: 20px auto;
   font-family: $stack-titillium-web;
-  color: #424242;
+  color: $color-span;
 }
 
 a {
   text-decoration: none;
-  color: grey;
+  color: darken($color-sec, 20%);
 
   &:visited {
-    color: darkgrey;
+    color: darken($color-sec, 30%);
   }
 
   &:hover {
-    color: lightgreen;
+    color: $color-links-hover;
     transition: .5s;
   }
 }

@@ -17,7 +17,7 @@ img {
   max-width: 100%; }
 
 h1 {
-  border-bottom: lightgrey 3px solid; }
+  border-bottom: #cab3b3 3px solid; }
 
 h1,
 h2 {
@@ -33,9 +33,9 @@ p {
 
 a {
   text-decoration: none;
-  color: grey; }
+  color: #cab3b3; }
   a:visited {
-    color: darkgrey; }
+    color: #b69494; }
   a:hover {
     color: lightgreen;
     transition: .5s; }
@@ -81,7 +81,7 @@ a {
 @media (min-width: 769px) {
   .secondary {
     width: 45%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-bottom: 0;
     padding-left: 5%; } }
 @media (min-width: 1100px) {
@@ -89,11 +89,11 @@ a {
     width: 50%;
     height: 50%;
     padding-top: 5%;
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-align: left; } }
 .secondary span {
   padding: 20px 10px;
-  font-size: 1.10em; }
+  font-size: 1em; }
 
 /*------ Navigation ------*/
 .main-nav a,
@@ -103,7 +103,7 @@ a {
   margin-bottom: 50px;
   list-style: none;
   background-color: #fff;
-  font-size: 1.20em; }
+  font-size: 1.2em; }
 @media (min-width: 769px) {
   .main-nav {
     clear: both; }
@@ -167,8 +167,8 @@ a {
   list-style: none; }
   @media (min-width: 769px) {
     .gallery li {
-      float: left;
       width: 45%;
+      float: left;
       margin: 2.5%; } }
   @media (min-width: 1100px) {
     .gallery li {
@@ -232,9 +232,9 @@ a {
       .links-bottom li {
         float: left;
         margin-right: 20px;
-        font-size: 1.2em; } }
+        font-size: 1em; } }
   @media (min-width: 1100px) {
     .links-bottom {
-      font-size: 1.2em; } }
+      font-size: 1em; } }
 
 /*# sourceMappingURL=application.css.map */

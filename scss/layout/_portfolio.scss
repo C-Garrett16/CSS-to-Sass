@@ -16,8 +16,8 @@
 
   li {
     @include brk(narrow) {
-      float: left;
       @include area($width: 45%);
+      float: left;
       margin: 2.5%;
     }
 
